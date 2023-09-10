@@ -8,6 +8,9 @@ public class class1 {
 
 		System.out.println(100);
 		
+		System.out.println(500);
+		
+		
 	}
 
 }
