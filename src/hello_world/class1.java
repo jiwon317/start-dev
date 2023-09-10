@@ -5,6 +5,8 @@ public class class1 {
 		
 		long k = 5000;
 		System.out.println(k);
+
+		System.out.println(100);
 		
 	}
 
