@@ -1,13 +1,22 @@
 package hello_world;
 
 public class LogicalOperatorExam {
-	public static void main(String[] args) {
-		int score = 65;
-		if(score >= 70 && score <= 100) {
-			System.out.println("성공");
+	public boolean isAgeDiscountable(int age) {
+		boolean isDiscount = false;
+		if( age <= 19 || age >= 60) {
+			isDiscount = true;
+			
 		}else {
-			System.out.println("실패");
+			isDiscount = false;
 		}
-		
+	return isDiscount;
 	}
+	
+	public static void main(String[] args){
+		LogicalOperatorExam exam = new LogicalOperatorExam();
+		System.out.println(exam.isAgeDiscountable(15));
+		System.out.println(exam.isAgeDiscountable(27));
+		System.out.println(exam.isAgeDiscountable(61));
+	}
+	
 }
