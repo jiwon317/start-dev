@@ -1,22 +1,22 @@
 package hello_world;
 
 public class LogicalOperatorExam {
-	public boolean isAgeDiscountable(int age) {
-		boolean isDiscount = false;
-		if( age <= 19 || age >= 60) {
-			isDiscount = true;
-			
+	public boolean isAgeTwenties(int age) {
+		boolean isTwenties = false;
+		if(age < 30 && age > 19) {
+			isTwenties = true;
 		}else {
-			isDiscount = false;
+			isTwenties = false;
 		}
-	return isDiscount;
+		
+		return isTwenties;
 	}
 	
 	public static void main(String[] args){
 		LogicalOperatorExam exam = new LogicalOperatorExam();
-		System.out.println(exam.isAgeDiscountable(15));
-		System.out.println(exam.isAgeDiscountable(27));
-		System.out.println(exam.isAgeDiscountable(61));
+		System.out.println(exam.isAgeTwenties(19));
+		System.out.println(exam.isAgeTwenties(25));
+		System.out.println(exam.isAgeTwenties(30));
+		
 	}
-	
 }
