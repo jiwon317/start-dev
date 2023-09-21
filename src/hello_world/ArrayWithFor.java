@@ -1,18 +1,28 @@
 package hello_world;
 
 public class ArrayWithFor {
-	public static void main(String[] args) {
-		int[] iarray = new int[100];
-//		for(int i = 0; 조건식; 증감식)
-//		for(int i = 0; i < 100; 증감식)
-//		for(int i = 0; i < iarray.length; 증감식)
-		for(int i = 0; i < iarray.length; i++) {
-			iarray[i] = i + 1;
+	public int[] fill100() {
+		int[] array = new int[100];
+		for(int i = 0; i < array.length; i++) {
+			array[i] = i+1;
 		}
-		int sum = 0;
-		for(int i = 0; i < iarray.length; i++) {
-			sum = sum + iarray[i];
+		return array;
+	}
+	
+	
+	public static void main(String[] args) {
+		ArrayWithFor exam = new ArrayWithFor();
+		int[] arr2 = exam.fill100();
+		int errCount = 0;
+		for (int i = 0; i < 100; i++) {
+			if (arr2[i] != i + 1) {
+				System.out.println("array[" + i + "]의 값이 틀립니다.");
+				errCount++;
+				
 			}
-			System.out.println(sum);
+		}
+		if(errCount == 0)
+			System.out.println("정답입니다.");
+		
 	}
 }
