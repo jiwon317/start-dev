@@ -7,7 +7,8 @@ public class ForExam {
 			if(i % 2 == 0) {
 				
 		System.out.println(i);
-	}
+			}
 	
+		}
+	}
 }
-	}}
