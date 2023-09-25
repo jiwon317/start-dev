@@ -11,8 +11,15 @@ public class startest0924 {
 					System.out.println("!");
 				}
 			}
-	
+
 		}
-			
+	public static void star() {
+		for (int k = 1; k <= 3; k++) {
+			for (int l = 1; l <= k; l++ ) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
 } 
 
